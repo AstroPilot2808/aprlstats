@@ -6,6 +6,13 @@ body {
     color: white;
 }
 
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 75px;
+}
+
 header {
     text-align: center;
     padding: 20px 0;
@@ -66,7 +73,7 @@ main {
 .number {
     font-size: 48px;
     color: black;
-    padding: 0 100px;
+    padding: 0 0px;
 }
 
 .arrow {
@@ -119,4 +126,26 @@ main {
 
 .tab-contents.active-tab {
     display: block;
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.rights-footer {
+    font-size: 14px;
+    color: #666;
+}
+
+.rights-footer span {
+    margin: 0 5px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .rights-footer {
+        font-size: 12px;
+    }
 }
