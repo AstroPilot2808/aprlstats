@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, red, black, blue);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.info {
+    font-size: 18px;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+.black-strip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 10px 0;
+}
+
+.black-strip p {
+    font-size: 20px;
+    color: white;
+    margin: 0;
+}
+
+.number-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 175px;
+}
+
+.number {
+    font-size: 48px;
+    color: black;
+    padding: 0 100px;
+}
+
+.arrow {
+    font-size: 48px;
+    color: black;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+    justify-content: center;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #b54769;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
